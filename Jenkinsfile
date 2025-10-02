@@ -10,7 +10,7 @@ pipeline {
     SNYK_TOKEN     = credentials('snyk-token')
   }
 
-  options { timestamps(); ansiColor('xterm') }
+  options { timestamps() }
 
   stages {
     stage('Checkout') {
